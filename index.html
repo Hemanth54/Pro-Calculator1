@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>⚡Pro Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header><span>⚡Pro Calculator</span><button id="historyBtn">History</button></header>
+<section class="display"><div id="expr"></div><div id="answer">0</div></section>
+<div class="keys" id="keys">
+<button class="key fn" data-v="sin(">sin</button><button class="key fn" data-v="cos(">cos</button><button class="key fn" data-v="tan(">tan</button><button class="key fn" data-v="log(">log</button><button class="key fn" data-v="ln(">ln</button>
+<button class="key fn" data-v="("> ( </button><button class="key fn" data-v=")"> ) </button><button class="key fn" data-v="%">%</button><button class="key fn" data-v="DEL">DEL</button><button class="key fn" data-v="AC">AC</button>
+<button class="key" data-v="7">7</button><button class="key" data-v="8">8</button><button class="key" data-v="9">9</button><button class="key op" data-v="/">÷</button><button class="key fn" data-v="sqrt(">√</button>
+<button class="key" data-v="4">4</button><button class="key" data-v="5">5</button><button class="key" data-v="6">6</button><button class="key op" data-v="*">×</button><button class="key fn" data-v="^2">x²</button>
+<button class="key" data-v="1">1</button><button class="key" data-v="2">2</button><button class="key" data-v="3">3</button><button class="key op" data-v="-">−</button><button class="key fn" data-v="^">xʸ</button>
+<button class="key wide" data-v="0">0</button><button class="key" data-v=".">.</button><button class="key equal" data-v="=">=</button><button class="key op" data-v="+">+</button>
+<button class="key fn" data-v="pi">π</button><button class="key fn" data-v="e">e</button><button class="key fn" data-v="!">n!</button><button class="key fn" data-v="ANS">ANS</button><button class="key fn" data-v="M+">M+</button>
+<button class="key fn" data-v="M-">M−</button><button class="key fn" data-v="MR">MR</button><button class="key fn" data-v="MC">MC</button><button class="key fn" data-v="ANGLE" id="angleMode">DEG</button><button class="key fn" data-v="HIST">History</button>
+</div></div>
+<div class="overlay" id="overlay"><div class="histhead">Calculation history <button id="closeHistory">Close ✕</button></div><div id="historyList"></div><button class="clear" id="clearHistory">Clear history</button></div>
+<script src="script.js"></script>
+</body></html>
